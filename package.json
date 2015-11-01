@@ -1,0 +1,31 @@
+{
+  "name": "podproxy",
+  "version": "0.1.0",
+  "description": "This is a proxy that automatically pulls information from your .podrc configuration file and grabs the names and assigned ports. All requests to the newly spawned proxy server will be forwarded to the appropriate server.",
+  "main": "app.js",
+  "dependencies": {
+    "http-proxy": "^1.12.0",
+    "jsonfile": "^2.2.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Mike Kozak <mkozak@meteormanaged.com> (http://www.meteormanaged.com)",
+  "license": "GPL-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meteormanaged/podproxy.git"
+  },
+  "keywords": [
+    "pod",
+    "proxy",
+    "pm2",
+    "podproxy",
+    "autoproxy"
+  ],
+  "bugs": {
+    "url": "https://github.com/meteormanaged/podproxy/issues"
+  },
+  "homepage": "https://github.com/meteormanaged/podproxy#readme"
+}
