@@ -7,11 +7,12 @@ This is a proxy that automatically pulls information from your .podrc configurat
 	var podproxy = require('podproxy');
 	
 	var options = {
-		PORT: 80,
+		port: 80,
 		static_routes: {
 			logs: 8888,
 			proxy: 8000
-		}
+		},
+		config_file: '/home/user/.podrc'
 	};
 	
 	podproxy(options);
