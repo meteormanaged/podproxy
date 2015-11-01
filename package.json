@@ -27,5 +27,6 @@
   "bugs": {
     "url": "https://github.com/meteormanaged/podproxy/issues"
   },
-  "homepage": "https://github.com/meteormanaged/podproxy#readme"
+  "homepage": "https://github.com/meteormanaged/podproxy#readme",
+  "main": "lib/index.js"
 }
