@@ -2,10 +2,12 @@
   "name": "podproxy",
   "version": "0.1.0",
   "description": "This is a proxy that automatically pulls information from your .podrc configuration file and grabs the names and assigned ports. All requests to the newly spawned proxy server will be forwarded to the appropriate server.",
-  "main": "app.js",
+  "main": "lib/index.js",
   "dependencies": {
     "http-proxy": "^1.12.0",
-    "jsonfile": "^2.2.3"
+    "jsonfile": "^2.2.3",
+    "needle": "^0.10.0",
+    "request": "^2.65.0"
   },
   "devDependencies": {},
   "scripts": {
