@@ -9,15 +9,6 @@ This is a proxy that automatically pulls information from your .podrc configurat
 	var server = require('podproxy');
 	
 	var options = {
-<<<<<<< HEAD
-		port: 80,
-		static_routes: {
-			logs: 8888,
-			proxy: 8000
-		},
-		config_location: '/home/user/.podrc'
-	};
-=======
 			host: {
 				username: 'admin',
 				password: 'admin',
@@ -30,8 +21,7 @@ This is a proxy that automatically pulls information from your .podrc configurat
 				proxy: 8000
 			}
 		};
->>>>>>> dev
-	
+		
 	server(options);
 	
 Updated November 1, 2015 - Mike Kozak
