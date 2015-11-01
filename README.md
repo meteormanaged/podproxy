@@ -4,17 +4,22 @@ This is a proxy that automatically pulls information from your .podrc configurat
 
 ## Usage
 
-	var podproxy = require('podproxy');
+	var server = require('podproxy');
 	
 	var options = {
-		port: 80,
-		static_routes: {
-			logs: 8888,
-			proxy: 8000
-		},
-		config_file: '/home/user/.podrc'
-	};
+			host: {
+				username: 'admin',
+				password: 'admin',
+				location: '127.0.0.1',
+				port: '19999'
+			},
+			port: 80,
+			static_routes: {
+				logs: 8888,
+				proxy: 8000
+			}
+		};
 	
-	podproxy(options);
+	server(options);
 	
 Updated November 1, 2015 - Mike Kozak
