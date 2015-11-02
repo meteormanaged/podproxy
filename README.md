@@ -6,6 +6,10 @@ This is a proxy that automatically pulls information from your .podrc configurat
 
 ## Usage
 
+	npm install podproxy
+	
+## Configuration
+	# Uses environmental PORT variable, or defaults to port 80.
 	var server = require('podproxy');
 	
 	var options = {
@@ -15,7 +19,6 @@ This is a proxy that automatically pulls information from your .podrc configurat
 				location: '127.0.0.1',
 				port: '19999'
 			},
-			port: 80, # Port for proxy server
 			interval: 20000, # How often to check for updated config.
 			static_routes: {
 				logs: 8888,
@@ -25,5 +28,6 @@ This is a proxy that automatically pulls information from your .podrc configurat
 		};
 		
 	server(options);
+	
 	
 Updated November 1, 2015 - Mike Kozak
